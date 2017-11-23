@@ -25,5 +25,6 @@ while ($donnees = $resultat->fetch())
   echo ' : ';
   echo $donnees['title'];
 }
+var_dump($donnees);
    
 ?>
