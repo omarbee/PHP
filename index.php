@@ -21,9 +21,9 @@ while ($donnees = $resultat->fetch())
      
 {
   echo '<br/>';
-  echo $donnees['nom'];
+  echo $donnees['etudiant_id'];
   echo ' : ';
-  echo $donnees['description'];
+  echo $donnees['title'];
 }
-   var_dump($resultat);
+   
 ?>
