@@ -9,7 +9,8 @@ catch(Exception $e)
     // En cas d'erreur, on affiche un message et on arrête tout
         die('Erreur : '.$e->getMessage());
 }
-$query = 'INSERT INTO categories (nom, description) VALUES (?, ?);';
+$query = 'INSERT INTO classes (etudiant_id,title ) VALUES (1, super);';
+$querry='SELECT * FROM classes;';
 $prep = $pdo->prepare($query);
  
 $prep->bindValue(1, 'bertand', PDO::PARAM_STR);
