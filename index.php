@@ -16,12 +16,14 @@ $prep = $pdo->prepare($query);
 $prep->bindValue(1, 'bertand', PDO::PARAM_STR);
 $prep->bindValue(2, 'ceci est un test pour desc', PDO::PARAM_STR);
 $prep->execute();
-$resultat = $pdo->query('SELECT * FROM categories');
+$resultat = $pdo->query('SELECT * FROM classes');
 while ($donnees = $resultat->fetch())
+     
 {
   echo '<br/>';
   echo $donnees['nom'];
   echo ' : ';
   echo $donnees['description'];
 }
+   var_dump($resultat);
 ?>
