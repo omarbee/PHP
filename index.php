@@ -2,7 +2,7 @@
 try
 {
     // On se connecte à MySQL
-    $pdo = new PDO('pgsql:ec2-46-137-174-67.eu-west-1.compute.amazonaws.com;dbname=d6ngsqf1ledqck;', 'znpcoimcuailgi', 'a1aff9d7e4d6481a2071aefde60dadae5ab6e83748362e34e418a6e782bc4d32);
+    $pdo = new PDO('pgsql:ec2-46-137-174-67.eu-west-1.compute.amazonaws.com;dbname=d6ngsqf1ledqck;', 'znpcoimcuailgi', 'a1aff9d7e4d6481a2071aefde60dadae5ab6e83748362e34e418a6e782bc4d32');
 }
 catch(Exception $e)
 {
